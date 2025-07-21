@@ -16,3 +16,11 @@ const response = await fetch('http://localhost:4000/graphql',{
     headers:{'Content-Type':'application/json'},
     body:JSON.stringify({query})
 });
+
+const result=await response.json();
+displayBooks(result.data.books);
+
+const displayBooks=(book)=>{
+    
+}
+}
