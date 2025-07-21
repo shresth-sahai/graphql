@@ -1,0 +1,34 @@
+
+GRAPHQL-> query lang -> APIS -> runtime 
+-> exisitnf data 
+-> FB -> it allows client to ask exactly what data is required 
+
+Kye concepts :
+/api/book/1 -> fixed 
+
+
+
+1 Query Based -> Query send to server -> response with exact data ->  no fixed response no 
+2 Single end point -> /graphql -> data we want will be defined in the request 
+3 schema-based -> strongly based ->expose schema 
+eg type Book{ -> client requirment 
+id:Int,
+title:String
+}
+4 Resolvers -> function that tells GRAPHQL how to fetch that data for a particular field
+//filter 
+5 mutations-> Write update delete -> mutations
+mutation{
+addBook(title:"DONE"......){
+id 
+title
+}
+
+
+REST  VS GRAPHQL 
+
+no multiple end points 
+overfetching -> avoided 
+underfetching -> avioided 
+api ->  versions -> no versioning because of the scehma 
+
